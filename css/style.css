@@ -1,0 +1,669 @@
+@media only screen and (min-width: 300px) {
+    html {
+      font-size: 9px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    html {
+      font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    html{
+        font-size: 10px;
+        
+    }
+}
+@media only screen and (min-width: 992px){
+    html{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    html{
+        font-size: 14px; 
+    }
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* _________________________________HOME_PAGE__________________________________________ */
+
+#navigation{
+    background-color: black;
+}
+
+#navigation a{
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 22px;
+    color: white;
+    opacity: 0.7;
+}
+#navigation a:current{
+    color: yellow;
+}
+#navigation a:hover{
+    color: black;
+}
+.hello{
+    display: flex;
+    align-items: center;
+}
+#home-page{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.719)), url("https://diviultimate.com/wp-content/uploads/2017/04/barber-cover.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home-page h1{
+    font-size: 5.1rem;
+    color: blanchedalmond;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1%;
+}
+#home-page h4{
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: rgba(255, 235, 205, 0.719);
+}
+
+/* ______________________________FEATURES_PAGE____________________________________ */
+.header-font{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 400;
+    color: blanchedalmond;
+}
+#features{
+    min-height: 100vh;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.features-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features-header h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 400;
+    color: blanchedalmond;
+}
+
+.features-header h4{
+    font-size: 1.5rem;
+    color: rgba(255, 235, 205, 0.699);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+.features-body{
+    padding: 10px; 
+    display:flex; 
+    justify-content: space-evenly;
+}
+.features-body-box{
+    margin-left: 1%;
+    /* background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url("../images/hair-cut.jpg"); */
+    border: 1px solid yellow;
+    height: 300px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: center;
+    transition: 1s;
+    opacity: 0;
+}
+.features-body-box:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.774)), url("../images/hair-cut.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.features-body-box h3{
+    color:blanchedalmond;
+    letter-spacing: 4px;
+    transition: 0.7s;
+    font-weight: 700;
+}
+.features-body-box:hover h3{
+    color: yellow;
+}
+.features-body-box p{
+    color: rgba(245, 245, 245, 0.74);
+    letter-spacing: 2px;
+}
+.features-body-box i{
+    color: blanchedalmond;
+    font-size: xx-large;
+    transition: 0.7s;
+}
+.features-body-box:hover i{
+    color: yellow;
+}
+
+/* ________________________________SERVICES_PAGE_____________________________________ */
+
+.services{
+    width:100%;
+    min-height: 60vh;
+    /* border: 4px solid red; */
+  }
+  .services-info{
+    min-height: 60vh;
+    /* border: 3px solid blue; */
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+  }
+  .services-top{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(15, 1, 1, 0.609);
+    letter-spacing: 0.5rem;
+    padding: 10px;
+    font-size: 1.3rem;
+    
+  }
+  .services-heading h3{
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    color: #333333;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+  }
+  .services-message p{
+    font-size: 1rem;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.631);
+    margin-top: 3%;
+  }
+  
+  .services-img{
+    /* border: 3px solid black; */
+    min-height: 100vh;
+    position: relative;
+  }
+  .services-img .img1{
+    width: 35%;
+    height: 70vh;
+    background-image: url("https://diviultimate.com/wp-content/uploads/2017/04/barber-3.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    z-index: 3;
+    box-shadow: 0px 12px 50px rgb(0 0 0 / 42%);
+    opacity: 0;
+  }
+  .services-img .img2{
+    width: 35%;
+    height: 45vh;
+    background-image: url("https://diviultimate.com/wp-content/uploads/2017/04/barber-1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 30%;
+    top: 7%;
+    z-index: 2;
+    opacity: 0;
+    box-shadow: 0px 12px 50px rgb(0 0 0 / 42%);
+  }
+  .services-img .img3{
+    width: 40%;
+    height: 45vh;
+    background-image: url("https://diviultimate.com/wp-content/uploads/2017/04/barber-cover-2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    z-index: 1;
+    opacity: 0;
+    box-shadow: 0px 12px 50px rgb(0 0 0 / 42%);
+  }
+
+  .services-img .img1-xs{
+    width: 45%;
+    height: 50vh;
+    background-image: url("https://diviultimate.com/wp-content/uploads/2017/04/barber-3.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    z-index: 11;
+    box-shadow: 0px 12px 50px rgb(0 0 0 / 42%);
+    opacity: 0;
+  }
+  .services-img .img2-xs{
+    width: 45%;
+    height: 35vh;
+    background-image: url("https://diviultimate.com/wp-content/uploads/2017/04/barber-1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 30%;
+    top: 4%;
+    z-index: 10;
+    opacity: 0;
+    box-shadow: 0px 12px 50px rgb(0 0 0 / 42%);
+  }
+  .services-img .img3-xs{
+    width: 47%;
+    height: 30vh;
+    background-image: url("https://diviultimate.com/wp-content/uploads/2017/04/barber-cover-2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    z-index: 9;
+    opacity: 0;
+    box-shadow: 0px 12px 50px rgb(0 0 0 / 42%);
+  }
+
+
+
+/* _________________________________REVIEW_PAGE__________________________________   */
+
+.review-page{
+    min-height: 100vh;
+    background-color: black;
+}
+#review-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+#myCarousel{
+  width: 100%;
+  min-height: 65vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: black;
+  border: 2px solid honeydew;
+}
+#twitter-review, #review-form{
+    opacity: 0;
+}
+
+.carousel-control{
+    color: transparent;
+}
+
+.review-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+.review-box-header{
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+}
+.user-img img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    margin: 1rem 1rem ;
+}
+.user-name h3{
+    color: whitesmoke;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+.user-name-xs h3{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+.user-name p{
+    color: lightseagreen;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    margin-top: -5px;
+}
+.user-name-xs p{
+    color: lightseagreen;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    margin-top: -5px;
+}
+.review-box-message{
+    /* width: 70%; */
+    min-height: 15rem;
+}
+.review-box-message p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    opacity: 0.7;
+    letter-spacing: 0.1rem;
+    margin: 0px 2rem;  
+}
+.review-box-message-xs p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: whitesmoke;
+    opacity: 0.8;
+    letter-spacing: 0.1rem;
+    margin: 0px 2rem;  
+}
+.review-box-stars{
+    padding-top: 1rem;
+    padding-left: 1.7rem;
+}
+.ratings .uncheck{
+    color: skyblue;
+    opacity: 0.7;
+}
+.ratings i{
+  font-size: large;
+}
+.checked{
+  color: cyan;
+  font-size: large;
+}
+#review-form{
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+
+#review-form h3{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: whitesmoke;
+    font-size: 1.9rem;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-top: 1%;
+    margin-bottom: 6%;
+}
+/* _________________________________OWNER_PAGE________________________________ */
+
+.owner-page{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.685)),url("../images/owner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#owner-msg-body{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.owner-name, .owner-msg, .owner-name-text{
+    opacity: 0;
+}
+
+.owner-name h4{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.63);
+    letter-spacing: 10px;
+    background-color: #354bca;
+    padding: 10px 20px;
+}
+.owner-msg h3{
+    color: white;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+/* ________________________________PRODUCTS_PAGE______________________________ */
+
+.products-page{
+    min-height: 100vh;
+    background-color:whitesmoke;
+    padding-bottom: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#products-row-1{
+    display: flex;
+    justify-content: space-around;
+}
+.products-body{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: 0;
+}
+.products-img{
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.products-img img{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40vh;
+}
+.products-add{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.products-font{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1rem;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+  }
+  .overlay1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute; 
+    bottom: 0%; 
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+  }
+  
+  .container1:hover .overlay1 {
+    opacity: 0.7;
+  }
+
+  /* ___________________________________STAFF-PAGE________________________________________ */
+  
+  .staff-page{
+      min-height: 100vh;
+      background-color: black;
+  }
+  #staff-members{
+      margin-top: 3%;
+      display: flex;
+      justify-content:space-around;
+  }
+  .staff-body{
+      position: relative;
+      border: 1px solid white;
+      padding: 5px;
+      overflow: hidden;
+  }
+  .staff-body img{
+      width: 100%;
+      height: 70vh;
+      opacity: 1;
+  }
+  .overlay3{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    transition: 0.7s ease;
+  }
+  .staff-body:hover .overlay3{
+    top: 0;
+    height: 100%;
+  }
+  /* .text1{
+    font-family: 'Ubuntu', sans-serif;
+    white-space: nowrap;
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+  } */
+.staff-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 70vh;
+    padding: 10px;
+}  
+.staff-header h3{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-size: 2.3rem;
+    color:white;
+}
+.staff-header-xs h3{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-size: 3rem;
+    color:white;
+}
+.staff-message{
+    /* font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif; */
+    padding: 10px;
+    color: blanchedalmond;
+    font-size: 1.43rem;
+    letter-spacing: 0.1rem;
+    font-weight: 0;
+}
+.staff-message-xs{
+    /* font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif; */
+    padding: 10px;
+    color: blanchedalmond;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 0;
+}
+
+/* __________________________________ABOUT_US_____________________________ */
+
+.about-us{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.792),rgba(0, 0, 0, 0.778)), url("../images/aboutUs-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.about-us-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+    align-items: center;
+}
+
+.about-us-body h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: azure;
+}
+
+.about-us-body p{
+    font-size: 1.4rem;
+    color: #c4c5c6;
+    letter-spacing: 0.1rem;
+}
+
+.about-us-body span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    padding: 15px 15px;
+    background-color: yellow;
+    color: black;
+    transition: 0.5s;
+}
+
+.about-us-body span:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.about-us-support{
+    padding: 30px;
+    border: 0.1rem solid rgba(245, 245, 245, 0.541);
+    border-bottom: none;
+    transition: 0.5s;
+}
+
+.about-us-support:hover{
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+.about-us-support i{
+    font-size: xx-large;
+    color: yellow;
+}
+.about-us-support h3{
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+.map{
+    display: none;
+}
+.arrow:hover{
+    cursor: pointer;
+}

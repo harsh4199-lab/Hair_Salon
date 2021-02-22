@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #features{
+            min-height: 100vh;
+            display: flex;
+            background-color: black;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .features-header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .features-header h1{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3.3rem;
+            font-weight: 700;
+            color: blanchedalmond;
+        }
+
+        .features-header h4{
+            color: rgba(255, 235, 205, 0.699);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            letter-spacing: 7px;
+        }
+        .features-body{
+            padding: 10px; 
+            display:flex; 
+            justify-content: space-evenly;
+        }
+        .features-body-box{
+            margin-left: 1%;
+            background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url("images/hair-cut.jpg");
+            border: 1px solid yellow;
+            height: 300px; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around; 
+            align-items: center;
+            transition: 1.3s;
+        }
+        .features-body-box:hover{
+            background-image:linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.774)), url("images/hair-cut.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .features-body-box h3{
+            color:blanchedalmond;
+            letter-spacing: 4px;
+            transition: 0.7s;
+            font-weight: 700;
+        }
+        .features-body-box:hover h3{
+            color: yellow;
+        }
+        .features-body-box p{
+            color: rgba(245, 245, 245, 0.74);
+            letter-spacing: 2px;
+        }
+        .features-body-box i{
+            color: blanchedalmond;
+            font-size: xx-large;
+            transition: 0.7s;
+        }
+        .features-body-box:hover i{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="features">
+        <div class="row features-header">
+            <div class=SHAVING>
+                <h1 class="text-center">Services</h1>
+            </div>
+            <div class="col-xs-8 col-sm-7 col-md-6 col-lg-5">
+                <h4 class="text-center">
+                    SERVICES OF HAIR STUDIO
+                    <!-- These are the services of the our barbershop.These are the services of the our barbershop. -->
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-10 col-lg-offset-1 features-body hidden-xs hidden-sm">
+                <div class="col-md-3 col-lg-3 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"></i>
+                    <h3>HAIRCUTTING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+                <div class="col-md-3 col-lg-3 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"  ></i>
+                    <h3>SHAVING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+                <div class="col-md-3 col-lg-3 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"></i>
+                    <h3>STYLING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+                <div class="col-md-3 col-lg-3 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"></i>
+                    <h3>TRIMMING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 features-body hidden-md hidden-lg">
+                <div class="col-xs-6 col-sm-4 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"></i>
+                    <h3>HAIRCUTTING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+                <div class="col-xs-6 col-sm-4 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"  ></i>
+                    <h3>SHAVING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+                <div class="col-xs-6 col-sm-4 features-body-box hidden-xs">
+                    <i class="fa fa-cut fa-rotate-270"  ></i>
+                    <h3>STYLING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>         
+            </div>     
+        </div>
+        <div class="row">
+            <div class="col-xs-12 features-body hidden-md hidden-lg hidden-sm">
+                <div class="col-xs-6 col-sm-4 features-body-box">
+                    <i class="fa fa-cut fa-rotate-270"></i>
+                    <h3>STYLING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>
+                <div class="col-xs-6 features-body-box hidden-sm">
+                    <i class="fa fa-cut fa-rotate-270"></i>
+                    <h3>SHAVING</h3>
+                    <p class="text-center">Cut and style, one step hair color, highlights, toner, corrective color, hair and scalp treatments.</p>
+                    <button class="btn btn-primary btn-sm"> READ MORE</button>
+                </div>         
+            </div>     
+        </div>
+    </div>
+</body>
+</html>
